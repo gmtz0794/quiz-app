@@ -1,24 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'poppins';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
-}
-
-.topnav {
-    padding-left: 35px;
-    padding-top: 30px;
-}
-
-.topnav score {
-    font-size: 35px;
-    color: #4900be;
-}
-
-#time {
-    display: inline;
-    text-align: right;
-    font-size: larger;
 }
 
 body {
@@ -50,7 +34,7 @@ body {
     background: #220058;
     color: #fff;
     font-weight: 500;
-    width: 15%;
+    width: auto;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;

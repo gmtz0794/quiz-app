@@ -11,30 +11,34 @@
 <body>
     <div class="app">
 
-    <!--Quiz start-->
-        <h1>Coding Quiz Challenge</h1>
-        <div class="quiz">
-            <h2 id="question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
-                <button>Start Quiz</button>
-            </div>
+<!--Quiz start-->
+        <div id="screen-home">
+                <h1>Coding Quiz Challenge</h1>
+                <div class="quiz">
+                    <h2 id="question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
+                        <button class="btn">Start Quiz</button>
+                </div>
         </div>
-
 <!--Quiz questions-->
+        <div id="screen-quiz">
             <div class="timer">
                 Time: <span id="timer"></span>
             </div>
-            <div id="start-quiz"> "Commonly used data types DO not include:"</div>
-        </br>
+                <div id="started-quiz"> "Commonly used data types DO not include:"</div>
+            </br>
+        </div>    
 
 <!--Quiz end-->
-        <h1>All Done!</h1>
-        <div class="quiz">
-            <h2 id="question">Your final score is: <span id="finalScore"></span></h2>
-                Enter Initials:
-                <button>Submit</button>
-            </div>
-        </div>
-</div>
+        <div id="screen-quiz-end">
+            <h1>All Done!</h1>
+                <div class="quiz">
+                    <h2 id="question">Your final score is: <span id="finalScore"></span></h2>
+                        Enter Initials:
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+        </div>    
+    </div>
 
 <script src="./assets/script/script.js"></script>
 </body>
