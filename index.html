@@ -21,6 +21,7 @@
                     </div>
                 </div>
         </div>
+
 <!--Quiz questions-->
         <div id="screen-quiz" class="not-visible">
             <div class="timer">
@@ -33,12 +34,15 @@
 <!--Quiz end-->
         <div id="screen-quiz-end" class="not-visible">
             <h1>All Done!</h1>
-                <div class="quiz">
-                    <h2 id="question">Your final score is: <span id="finalScore"></span></h2>
-                        Enter Initials:
-                        <button class="btn">Submit</button>
+            <div class="quiz">
+                <h2 id="question">Your final score is: <span id="finalScore"></span></h2>
+                <div id="answer-buttons">
+                    Enter Initials:
+                    <input type="text" id="txtInitials"></input>
+                        <button class="btn" onclick="javascript:sendInitials();">Submit</button>
                     </div>
                 </div>
+            </div>
         </div>    
     </div>
 
