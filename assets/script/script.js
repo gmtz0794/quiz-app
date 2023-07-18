@@ -86,3 +86,27 @@ function sendAnswer(isCorrect){
     }
     renderQuestions();
 }
+
+function sendInitials(){
+    var scoreValue = localStorage.getItem("final-score");
+    var name = $("#txtInitials").val();
+    var scores = localStorage.getItem("scores");
+    if(scores === '' || scores === 'undefined' || typeof(scores) === "undefined" || scores === null){
+        scores = [{initials: name, score: scoreValue}];
+    }
+    else {
+        scores = JSON.parse(scores);
+        scores.push({initials: name, score: scoreValue});
+    }
+
+    localStorage.setItem("scores", JSON.stringify(scores));
+    showHome();
+}
+
+function showScore() {
+    $("#screen-quiz").addClass('not-visible');
+    $("#screen-quiz-end").removeClass('not-visible');
+
+    var score = localStorage.getItem("final-score");
+    $("#finalScore").html(score);
+}
