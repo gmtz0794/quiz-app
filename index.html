@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz app</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="app">
+
+    <!--Quiz start-->
         <h1>Coding Quiz Challenge</h1>
         <div class="quiz">
             <h2 id="question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
-            <div id="answer-buttons">
-                <button class="btn">Start Quiz</button>
+                <button>Start Quiz</button>
             </div>
         </div>
-    </div>
-    
+
+<!--Quiz questions-->
+            <div class="timer">
+                Time: <span id="timer"></span>
+            </div>
+            <div id="start-quiz"> "Commonly used data types DO not include:"</div>
+        </br>
+
+<!--Quiz end-->
+        <h1>All Done!</h1>
+        <div class="quiz">
+            <h2 id="question">Your final score is: <span id="finalScore"></span></h2>
+                Enter Initials:
+                <button>Submit</button>
+            </div>
+        </div>
+</div>
+
+<script src="./assets/script/script.js"></script>
 </body>
 </html>
