@@ -16,20 +16,22 @@
                 <h1>Coding Quiz Challenge</h1>
                 <div class="quiz">
                     <h2 id="question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
-                        <button class="btn">Start Quiz</button>
+                    <div id="answer-buttons">
+                        <button class="btn" onclick="javascript:startQuiz();">Start Quiz</button> <br />
+                    </div>
                 </div>
         </div>
 <!--Quiz questions-->
-        <div id="screen-quiz">
+        <div id="screen-quiz" class="not-visible">
             <div class="timer">
                 Time: <span id="timer"></span>
             </div>
-                <div id="started-quiz"> "Commonly used data types DO not include:"</div>
             </br>
-        </div>    
+            <div id="content"></div>
+        </div>
 
 <!--Quiz end-->
-        <div id="screen-quiz-end">
+        <div id="screen-quiz-end" class="not-visible">
             <h1>All Done!</h1>
                 <div class="quiz">
                     <h2 id="question">Your final score is: <span id="finalScore"></span></h2>
