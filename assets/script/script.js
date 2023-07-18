@@ -110,3 +110,12 @@ function showScore() {
     var score = localStorage.getItem("final-score");
     $("#finalScore").html(score);
 }
+
+function showHome() {
+    $("#screen-quiz-end").addClass('not-visible');
+    $("#screen-home").removeClass('not-visible');
+
+    $("#txtInitials").val('');
+    currentQuestion = 0;
+    duration = 75;
+}
