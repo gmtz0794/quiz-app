@@ -1,8 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'poppins';
     box-sizing: border-box;
+}
+
+.topnav {
+    padding-left: 35px;
+    padding-top: 30px;
+}
+
+.topnav score {
+    font-size: 35px;
+    color: #4900be;
+}
+
+#time {
+    display: inline;
+    text-align: right;
+    font-size: larger;
 }
 
 body {
@@ -46,4 +62,12 @@ body {
 .btn:hover {
     background: #4900be;
     color: #fff;
+}
+
+.not-visible {
+    display: none;
+}
+
+.timer {
+    float: right;
 }
