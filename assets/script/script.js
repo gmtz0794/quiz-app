@@ -119,3 +119,23 @@ function showHome() {
     currentQuestion = 0;
     duration = 75;
 }
+
+function showHighScores(){
+    $("#screen-home").addClass('not-visible');
+    $("#screen-scorelist").removeClass('not-visible');
+
+    var html = '';
+    var scores = JSON.parse(localStorage.getItem("scores"));
+    scores.forEach(score => {
+        html += '<li>Initial: ' + score.initials + ', score: ' + score.score + '</li>';
+    });
+
+    $("#score-list").html(html);
+}
+
+function loadScores(){
+    var scores = localStorage.getItem("scores");
+    if (typeof(scores) !== "undefined" && scores !== null) {
+        console.info(JSON.parse(scores));
+    }
+}

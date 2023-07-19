@@ -10,9 +10,16 @@
 
 <body>
     <div class="app">
+<!--Quiz high score-->
+        <div id="screen-scorelist" class="not-visible">
+            <h1>List of high scores</h1>
+            <ul id="score-list">
+            </ul>
+        </div>
 
 <!--Quiz start-->
         <div id="screen-home">
+                <a href="javascript: showHighScores();">Show High Scores</a><span id="home-time">Time:</span>
                 <h1>Coding Quiz Challenge</h1>
                 <div class="quiz">
                     <h2 id="question">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</h2>
