@@ -19,4 +19,9 @@ The user is first presented with the start page quiz. It contains instructions a
 
 ## Credits
 
-N/A
+- StackOverflow.com
+- JQuery.com
+- W3Schools.com
+- MDN Docs
+- https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1022s
+- https://www.youtube.com/watch?v=WiLTsxjCmWQ&t=137s
